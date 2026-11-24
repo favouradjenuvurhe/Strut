@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>STRUT* – Fall Collection</title>
+<meta name="description" content="STRUT*: Drop 01, Fall Collection. Nine looks, one line. Swipe the line, shop the look.">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%230e0e0e%27/%3E%3Ctext x=%2750%27 y=%2776%27 font-size=%2780%27 text-anchor=%27middle%27 fill=%27%23ffd60a%27 font-family=%27Arial%27 font-weight=%27bold%27%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<header class="bar"><a class="logo" href="#" data-n="line">STRUT<sup>*</sup></a>
+<nav aria-label="Main"><button class="on" data-n="line">The Line</button><button data-n="drop">Drop 01</button><button data-n="stores">Stores</button><button data-n="journal">Journal</button></nav>
+<button class="bagb" id="bagBtn" aria-label="Open bag">BAG <span class="tk" id="cnt">0</span></button></header>
+<main class="app">
+<section class="stage" id="st">
+ <p class="meta">Drop 01 · Store 001 · France</p>
+ <div class="tog" role="group" aria-label="View"><button class="tk on" data-m="line">Line</button><button class="tk" data-m="lineup">Line-up</button></div>
+ <div class="ttl"><h1>Fall<br>Collection</h1><p class="desc">Nine looks, one line. Everyone wants their turn. Drag the line; whoever is at the front is being served.</p></div>
+ <div class="lk"><button id="back">← Back to the line</button><p id="q"></p><dl id="stats"></dl></div>
+ <svg id="ln" aria-hidden="true"><polygon id="band" fill="#ffd60a"/><line id="base" stroke="#0e0e0e" stroke-dasharray="3 5" stroke-width="1"/></svg>
+ <p class="hint" id="hint"></p><div id="figs"></div><div id="tags"></div>
+ <div class="ns"><span class="srv">NOW SERVING</span><b id="num" aria-live="polite"></b><p id="nm"></p>
+  <div class="ct"><button class="tk split" id="shop"><span class="no" id="no">NO. 01</span><span id="shopT">Shop the look →</span></button></div></div>
+</section>
+<aside id="side" aria-label="This look"></aside>
+</main>
+<aside id="bag" aria-label="Bag"></aside>
+<section id="sheet" aria-label="Page"></section>
+<div id="cu" aria-hidden="true"></div>
+<div id="toast" role="status"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
